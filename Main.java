@@ -94,6 +94,29 @@ guess = scan.nextInt(); //LOOP CHANGE
 
       System.out.println("YOU DID NOT DO IT >:(");
          // Print out something like "You got it!"
+
+
+         String s = "Jackson dropped most of the chargers!";
+         int i = 0;
+         // test oconditions while 'a' is still in String s
+
+         
+         while (s.indexOf("a") >= 0);
+            // get the first index of a
+            i = s.indexOf("a");
+            // replace charecter at that index
+            String letter = s.substring(i, i+1);
+
+            System.out.println("There is an" + letter + " at index" + i);
+            // get the first part of the string
+            String firstPart = s.substring(0, i);
+            // get the last part of the string
+            String lastPart = s.substring(i+1, s.length());
+            // replace charecter in s
+            s = firstPart + "@" + lastPart;
+
    
+            System.out.println("String after find & replace: " + s);
+            
    }
 }
